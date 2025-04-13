@@ -497,18 +497,36 @@ class So100RobotConfig(ManipulatorRobotConfig):
             ),
         }
     )
-    
+
 
     cameras: dict[str, CameraConfig] = field(
         default_factory=lambda: {
-            "laptop": OpenCVCameraConfig(
-                camera_index=0,
-                fps=30,
+            # "laptop": OpenCVCameraConfig(
+            #     camera_index=0, #7
+            #     fps=30,
+            #     width=640,
+            #     height=480,
+            # ),
+            # "back": OpenCVCameraConfig(
+            #     camera_index=6, #7
+            #     fps=30,
+            #     width=640,
+            #     height=480,
+            # ),
+            "top": OpenCVCameraConfig(
+                camera_index=7, #7
+                fps=22,
                 width=640,
                 height=480,
             ),
-            "phone": OpenCVCameraConfig(
-                camera_index=2,
+            "left": OpenCVCameraConfig(
+                camera_index=2, #5
+                fps=20,
+                width=640,
+                height=480,
+            ),
+            "right": OpenCVCameraConfig(
+                camera_index=4, #1
                 fps=30,
                 width=640,
                 height=480,
