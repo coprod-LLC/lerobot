@@ -1,2 +1,2 @@
 # Create a symlink for easy access as /dev/so-100/follower_left
-KERNEL=="ttyACM*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="55d3", ATTRS{serial}=="58FA082419", MODE:="0777", SYMLINK+="so-100/follower_left"
+KERNEL=="ttyACM*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="55d3", ATTRS{serial}=="58FA081946", MODE:="0777", SYMLINK+="so-100/follower_left"
